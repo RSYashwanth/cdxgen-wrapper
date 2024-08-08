@@ -11,7 +11,7 @@ const child = spawn(target, args, {
 });
 
 child.on("error", (e) => {
-  console.error(`${error.message}`);
+  console.error(`${e.message}`);
   process.exit(1);
 });
 
